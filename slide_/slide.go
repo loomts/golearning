@@ -1,17 +1,15 @@
 package slide_
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func Slide_() {
-	v := make([]int, 3, 10)
-	for i, _ := range v {
-		v[i] = i
-	}
-	fmt.Printf("%v\n", v)
-	v = append(v[:5], v[2:]...)
-	fmt.Printf("%v\n", v)
+	// v := make([]int, 3, 10)
+	// for i, _ := range v {
+	// 	v[i] = i
+	// }
+	// fmt.Printf("%v\n", v)
+	// v = append(v[:5], v[2:]...)
+	// fmt.Printf("%v\n", v)
 	//var a []int
 	//b := v // shallow copy
 	//a = make([]int, 3)
@@ -38,5 +36,9 @@ func Slide_() {
 	//fmt.Println(second, exist)
 	//second, exist = mp["3"]
 	//fmt.Println(second, exist)
-
+	mp := make(map[int][]int)
+	mp[2] = []int{}
+	for k, v := range mp {
+		fmt.Print("------", k, v)
+	}
 }
