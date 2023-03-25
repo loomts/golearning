@@ -21,10 +21,10 @@ func (t *T) String() string {
 	return fmt.Sprintf("%d/%g/%q", t.a, t.b, t.c)
 }
 func Print_() {
-	fmt.Printf("Hello %d\n", 23)
-	fmt.Fprint(os.Stdout, "Hello ", 23, "\n")
-	fmt.Println("Hello", 23)
-	fmt.Println(fmt.Sprint("Hello ", 23)) // make it as a string
+	fmt.Printf("pointerHello %d\n", 23)
+	fmt.Fprint(os.Stdout, "pointerHello ", 23, "\n")
+	fmt.Println("pointerHello", 23)
+	fmt.Println(fmt.Sprint("pointerHello ", 23)) // make it as a string
 
 	t := &T{7, -2.35, "abc\tdef"}
 	

@@ -1,6 +1,6 @@
 package main
 
-import "golearning/fetchURL_"
+import "golearning/internal/interface_"
 
 func main() {
 	//redeclear_.Redeclear_()
@@ -8,7 +8,7 @@ func main() {
 	//defer_.LIFO()
 	//defer_.Trace():
 	//make_.Make_()
-	//slide_.Slide_()
+	//slice_.Slide_()
 	//print_.Print_()
 	// interface_.Interface_()
 	//t := &log_.SubTask{Task: &log_.Task{TaskId: 0,
@@ -20,5 +20,12 @@ func main() {
 	// script.Script()
 	//args_.Args()
 	//gif_.Gif()
-	fetchURL_.FetchURL()
+	//fetchURL_.FetchURL()
+	//Mandelbrot_.Mandelbrot()
+	//tmp_.Tmp()
+	//flag.Flag()
+	//flag20.Flag()
+	//interface_.Interface_()
+	//rune_.Rune()
+	interface_.Interface_()
 }

@@ -1,14 +1,40 @@
-package slide_
+package slice_
 
-import "fmt"
+import (
+	"fmt"
+)
+
+var container = []string{"zero", "one"}
 
 func Slide_() {
-	// v := make([]int, 3, 10)
-	// for i, _ := range v {
-	// 	v[i] = i
-	// }
-	// fmt.Printf("%v\n", v)
-	// v = append(v[:5], v[2:]...)
+
+	//mp := make(map[int]struct{})
+	//a := make([]int, 13)
+	//for cap(a) < 5000 {
+	//	a = append(a, 1)
+	//	mp[cap(a)] = struct{}{}
+	//}
+	//var b []float64
+	//for k, _ := range mp {
+	//	b = append(b, float64(k))
+	//}
+	//sort.Float64s(b)
+	//for i := 0; i < len(b)-1; i++ {
+	//	fmt.Println(b[i+1]/b[i], b[i])
+	//}
+	mp := map[int]int{}
+	mp[1] = 1123
+	fmt.Println(mp[1])
+	a := make([]int, 1)
+	a[0] = 1
+	fmt.Printf("%p\n", &a)
+	fmt.Printf("%v\n", a)
+	func(b []int) {
+		fmt.Printf("%p\n", &b)
+		b[0] = 2
+	}(a)
+	fmt.Printf("%v\n", a)
+
 	// fmt.Printf("%v\n", v)
 	//var a []int
 	//b := v // shallow copy
@@ -36,9 +62,11 @@ func Slide_() {
 	//fmt.Println(second, exist)
 	//second, exist = mp["3"]
 	//fmt.Println(second, exist)
-	mp := make(map[int][]int)
-	mp[2] = []int{}
-	for k, v := range mp {
-		fmt.Print("------", k, v)
-	}
+	//mp := make(map[int][]int)
+	//mp[2] = []int{}
+	//for k, v := range mp {
+	//	fmt.Print("------", k, v)
+	//}
+	//container := map[int]string{0: "zero", 1: "one"}
+	//fmt.Printf("The first element:%q.\n", container[0])
 }
