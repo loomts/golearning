@@ -1,16 +1,17 @@
 package main
 
-import "golearning/internal/interface_"
+import "golearning/internal/heap_"
 
 func main() {
 	//redeclear_.Redeclear_()
-	//switch_.GetType(1)
+	//switch_.Switch(1)
 	//defer_.LIFO()
+	//channel_.Channel()
 	//defer_.Trace():
 	//make_.Make_()
 	//slice_.Slide_()
 	//print_.Print_()
-	// interface_.Interface_()
+	//interface_.Interface_()
 	//t := &log_.SubTask{Task: &log_.Task{TaskId: 0,
 	//	Logger: log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)}}
 	//t.Printf("task")
@@ -27,5 +28,6 @@ func main() {
 	//flag20.Flag()
 	//interface_.Interface_()
 	//rune_.Rune()
-	interface_.Interface_()
+	//interface_.Interface_()
+	heap_.Heap()
 }

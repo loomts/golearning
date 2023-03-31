@@ -1,8 +1,23 @@
 package switch_
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
-func GetType(t any) {
+func Switch(t any) {
+	switch {
+	case false:
+		fmt.Println(false)
+	case true:
+		fmt.Println(true)
+	default:
+		fmt.Println("default")
+	}
+	select {
+	case <-time.After(time.Second):
+		fmt.Println("after 1s")
+	}
 	switch t := t.(type) {
 	default:
 		fmt.Printf("unexpected type %T\n", t) // %T prints whatever type t has
